@@ -1,4 +1,5 @@
 // ------------------------- SETUP -------------------------
+require('dotenv').config(); // for process.env.DEFAULT_PORT
 // Dependencies
 const express = require('express');
 const exphbs  = require('express-handlebars');
@@ -8,8 +9,6 @@ const mysql = require('mysql2');
 const sequelize = require('./config/connection');
 const routes = require('./routes');
 
-// Module dependencies
-const db_config = require("./config/config");
 // Create an instance of the express app.
 const app = express();
 // Set port for connection
