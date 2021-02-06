@@ -33,22 +33,22 @@ app.set("view engine", "handlebars");
 
 // ------------------------- ROUTES (test) -------------------------
 app.get("/", function(req, res) {
-  let connection = mysql.createConnection(db_config);
-  let promisedParanormal_locations = new Promise((resolve, reject) => {
-    connection.query("SELECT * FROM paranormal_locations;", function(err, data) {
-     console.log(data);
-      if (err) {
-        return res.status(500).end();
-      }
-      connection.end();
+  //let connection = mysql.createConnection(db_config);
+  //let promisedParanormal_locations = new Promise((resolve, reject) => {
+  //  connection.query("SELECT * FROM paranormal_locations;", function(err, data) {
+  //   console.log(data);
+  //    if (err) {
+  //      return res.status(500).end();
+  //    }
+  //    connection.end();
       // output from '\views\index.handlebars'
       res.render("index");
-    });
-  });
-  promisedParanormal_locations.then((successMessage) => {
+  //  });
+ // });
+  //promisedParanormal_locations.then((successMessage) => {
     // successMessage is whatever we passed in the resolve(...) function above.
     // It doesn't have to be a string, but if it is only a succeed message, it probably will be.
-    res.send(successMessage);
+   // res.send(successMessage);
   }); 
 });
 
