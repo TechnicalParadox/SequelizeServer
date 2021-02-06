@@ -1,4 +1,5 @@
-# paranormal-tourism
+# Sequelize Server Template
+Featuring ability to switch between locally using local database or a live database, or deployed using JawsDB environment variables
 
 Template .env
 ```
