@@ -49,7 +49,7 @@ app.get("/", function(req, res) {
     // successMessage is whatever we passed in the resolve(...) function above.
     // It doesn't have to be a string, but if it is only a succeed message, it probably will be.
    // res.send(successMessage);
-  }); 
+  //}); 
 });
 
 // ------------------------- APP.LISTEN -------------------------
